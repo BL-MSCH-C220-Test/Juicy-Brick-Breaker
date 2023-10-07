@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fcnrkt6hv7x4"
+path="res://.godot/imported/Central City.ogg-932fcb3b65f42070806823dbb19b4472.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Central City.ogg"
+dest_files=["res://.godot/imported/Central City.ogg-932fcb3b65f42070806823dbb19b4472.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

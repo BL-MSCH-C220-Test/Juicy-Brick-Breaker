@@ -4,9 +4,9 @@ var levels = [
 	{
 		"name":"Level 1",
 		"instructions":"Break all the Bricks",
-		"background":"",
+		"background":"res://icon.svg",
 		"music":"",
-		"sound_paddle":"",
+		"sound_paddle":"res://Assets/89977__minerjr__ballhit.wav",
 		"sound_brick":"",
 		"sound_wall":"",
 		"sound_die":"",
@@ -16,7 +16,7 @@ var levels = [
 		"layout_start":Vector2(125,105),
 		"layout_spacing":Vector2(100,40),
 		"bricks":{
-			100:"res://Brick/Brick.tscn",
+			100:"res://Brick/100.tscn",
 			90:"res://Brick/Brick.tscn",
 			80:"res://Brick/Brick.tscn",
 			70:"res://Brick/Brick.tscn",
@@ -40,7 +40,7 @@ var levels = [
 		"name":"Level 2",
 		"instructions":"Keep on brickin'",
 		"background":"",
-		"music":"",
+		"music":"res://Assets/Central City.ogg",
 		"sound_paddle":"",
 		"sound_brick":"",
 		"sound_wall":"",
@@ -98,5 +98,34 @@ var levels = [
 			,[100,100,100,100,100,100,100,100]
 			,[100,100,100,100,100,100,100,100]
 		]
+	},
+	{
+		"name":"Bonus Round",
+		"instructions":"Break them as quickly as you can!",
+		"background":"",
+		"music":"",
+		"sound_paddle":"",
+		"sound_brick":"",
+		"sound_wall":"",
+		"sound_die":"",
+		"sound_start":"",
+		"multiplier":2.0,
+		"timer":30,
+		"layout_start":Vector2(205,105),
+		"layout_spacing":Vector2(100,40),
+		"bricks":{
+			100:"res://Brick/Brick.tscn",
+		},
+		"layout":[
+			[100,100,100,100,100,100,100,100]
+			,[100,100,100,100,100,100,100,100]
+			,[100,100,100,100,100,100,100,100]
+			,[100,100,100,100,100,100,100,100]
+			,[100,100,100,100,100,100,100,100]
+			,[100,100,100,100,100,100,100,100]
+			,[100,100,100,100,100,100,100,100]
+			,[100,100,100,100,100,100,100,100]
+		]
 	}
+	
 ]

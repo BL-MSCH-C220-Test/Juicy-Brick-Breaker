@@ -12,11 +12,12 @@ func _ready():
 		var layout = level["layout"]
 		var Brick_Container = get_node_or_null("/root/Game/Brick_Container")
 		Global.time = level["timer"]
+		var Bricks = level["bricks"]
 		if Brick_Container != null:
-			var Brick = load("res://Brick/Brick.tscn")
 			for rows in range(len(layout)):
 				for cols in range(len(layout[rows])):
 					if layout[rows][cols] > 0:
+						var Brick = load(Bricks[layout[rows][cols]])
 						var brick = Brick.instantiate()
 						brick.new_position = Vector2(margin.x + index.x*cols, margin.y + index.y*rows)
 						brick.position = Vector2(brick.new_position.x,-100)
@@ -25,3 +26,10 @@ func _ready():
 		var Instructions = get_node_or_null("/root/Game/UI/Instructions")
 		if Instructions != null:
 			Instructions.set_instructions(level["name"],level["instructions"])
+		if level["background"] != "":
+			$Background.texture = load(level["background"])
+		if level["music"] != "":
+			$Music.stream = load(level["music"])
+			$Music.playing = true
+		if level["sound_paddle"] != "":
+			$Sound_Paddle.stream = load(level["sound_paddle"])
