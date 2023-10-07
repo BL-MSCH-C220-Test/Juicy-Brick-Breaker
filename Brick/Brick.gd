@@ -16,6 +16,9 @@ func _physics_process(_delta):
 
 func hit(_ball):
 	die()
+	var Camera = get_node_or_null("/root/Game/Camera")
+	if Camera != null:
+		Camera.add_trauma(1.5)
 
 func die():
 	dying = true

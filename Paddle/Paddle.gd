@@ -22,8 +22,10 @@ func _input(event):
 		target.x += event.relative.x
 
 func hit(_ball):
-	pass
-
+	var Camera = get_node_or_null("/root/Game/Camera")
+	if Camera != null:
+		Camera.add_trauma(2.0)
+		
 func powerup(payload):
 	for c in $Powerups.get_children():
 		if c.type == payload.type:
